@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Thị Nhã Hiền</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="img/hinh1.jpg" alt="hinh anh">
+        Trần Thị Nhã Hiền hello cả nhà nha -->
+        
+    </div>
+    <Script src="js/script.js"></Script>
+    <button onclick="helloworld('Hiền')">helloworld</button>
+
+    <p id = "demo"></p>
+
+    <p id="post"></p>
+    <button onclick="getPost()">Hiển thị bài viết</button>
+    <!-- Gõ js rồi load lại trang -->
+
+
+    <script>
+
+        document.getElementById("demo").innerHTML = "Đại học văn lang";
+        function getPost(){
+            document.getElementById("post").innerHTML= 
+            <p>Đây là một đoạn văn bản</p>
+        }
+
+        function helloworld(fullname){
+            alert("hello " + fullname);
+        }
+
+        function myfunction(a,b){
+            return a * b;
+        }
+        var x = myfunction(4,3);
+        console.log("x = "+x);
+
+        var cars = ["Honda", "volvo", "BMW"];
+        //câu hỏi phỏng vấn Gameloft, câu hoie Codewars code giấy / code online
+        //code đảo ngược mảng cars
+        var reversedCars = [];
+        reversedCars = cars.reverse();
+        //for (let i = cars.length - 1, i >= 0, i++){
+        //     reversedCars.push(cars[i]);
+        //}
+        console.log("reversedCars " + reversedCars);
+        console.log(cars[0])
+
+        var animalDog = {
+            name: "Dog",
+            color: "Black",
+            age: 5
+        };
+        //name, 
+
+        var name ="Hiền"; //biến
+        let age = 22;//biến
+        const company = "Đại học văn lang"; //hằng
+        const PI = 3.14; //hằng
+        // alert("Hello" + name);
+
+        // var cong = 1 + 2 + 'a';
+        var cong = 1 + 'a' + 2;
+        //Dấu cộng: 
+        //Nếu 2 số thì sẽ thực hiện phép cộng
+        //Nếu 1 trong 2 là chuỗi thì sẽ thực hiện phép nối chuỗi
+        alert(cong);
+
+
+        var a = 10;
+        var b = '10';
+        console.log(a==b); //so sánh giá trị: true
+        console.log(a===b); //so sánh giá trị và kiểu dữ liệu: false
+        //Data type - kiểu dữ liệu:
+        //number, string, boolean, null, undefined, object, array
+
+
+        
+
+        //Scope: phạm vi hoạt động của biến
+        var total = 0;
+        for(let i = 0; i < 5; i++){
+            total = total + i;
+        }
+    </script>
+</body>
+</html>
